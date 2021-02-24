@@ -1,0 +1,12 @@
+zuul:
+    # 全部服务忽略敏感头（都可传递cookie)
+  sensitive-headers:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+  # simple write
+#    product: /myProduct/**
+    # exclude some request
+  ignored-patterns:
+    - /**/list/listForOrder
