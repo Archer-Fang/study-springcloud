@@ -7,7 +7,7 @@ spring:
   cloud:
     #Config客户端配置
     config:
-      label: master #分支名称
+      label: main #分支名称
       name: config #配置文件名称
       profile: dev #读取后缀名称 上诉3个综合就是 master分支上 config-dev.yml
       uri: http://localhost:3344
